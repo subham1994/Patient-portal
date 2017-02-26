@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>Patient Portal</title>
+
+        <!-- CSS  -->
+
+        <link href="vendor/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="vendor/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+
+
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="container">
+                    <a href="/" class="brand-logo">PATIENT PORTAL</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container" style="margin-top: 30px;">
+            <div class="row" >
+
+                <!--  sidemenu -->
+                <div class="col l2" id="content-area">
+                    <div class="sidemenu">
+                        <ul class="section table-of-contents">
+                            <li>
+                               <a href="" id="id_create_entry" class="collection-item active">Create Entry</a>
+                            </li>
+                            <li>
+                                <a href="" id="id_directory" class="collection-item">Directory</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--  end sidemenu -->
+
+                <!--  main content area -->
+                <div class="col l8 offset-l2" id="main-content">
+                    <!--  Entry Form -->
+                    <div class="card-panel" id="id_entry_section">
+                        <form name="entryForm">
+
+                            <h4 class="right-align header-text">Create Entry</h4>
+                            
+                            <div class="row">
+                                <div class="input-field col l6">
+                                    <label for="id_first_name">First Name</label>
+                                    <input id="id_first_name" name="firstName" type="text" required>
+                                </div>
+
+                                <div class="input-field col l6">
+                                    <label for="id_last_name">Last Name</label>
+                                    <input id="id_last_name" name="lastName" type="text" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col l6">
+                                    <label for="id_phone">Contact No.</label>
+                                    <input id="id_phone" name="contact" type="text">
+                                </div>
+
+                                <div class="input-field col l6">
+                                    <label for="id_dob">Date of birth (YYYY-MM-DD)</label>
+                                    <input id="id_dob" name="dob" type="text">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <select multiple name="symptoms">
+                                        <option value="" disabled selected>Symptoms</option>
+                                        <option value="Common Cold">Common Cold</option>
+                                        <option value="Jaw Pain">Jaw Pain</option>
+                                        <option value="Arm Pain">Arm Pain</option>
+                                        <option value="Hand and Finger Numbness">Hand and Finger Numbness</option>
+                                        <option value="White Tongue">White Tongue</option>
+                                        <option value="Swollen Lip">Swollen Lip</option>
+                                        <option value="Watery Eye">Watery Eye</option>
+                                        <option value="Flu (influenza) symptoms">Flu (influenza) symptoms</option>
+                                        <option value="Heart attack symptoms">Heart attack symptoms</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col l12">
+                                    <select name="sex">
+                                        <option value="" disabled selected>Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col l12">
+                                    <label for="id_info">Additional info</label>
+                                    <input id="id_info" name="info" type="text">
+                                </div>
+                            </div>
+
+                            <div class="right-align">
+                                <button class="waves-effect waves-light btn" type="button" id="id_submit">create entry</button>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div id="id_nav_sec"></div>
+                    <div id="id_dir_sec"></div>
+                </div>
+                <!--  end main content area -->
+
+            </div>
+        </div>
+
+
+        <!--  Scripts-->
+        <script src="vendor/js/jquery.min.js"></script>
+        <script src="vendor/js/materialize.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

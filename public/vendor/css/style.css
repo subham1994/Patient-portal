@@ -1,0 +1,136 @@
+:root {
+  --main-bg-color: #33C3F0;
+}
+
+@media (min-width: 993px) {
+    .sidemenu {
+        width: 186px;
+        position: fixed;
+    }
+}
+
+nav {
+    background-color: var(--main-bg-color);
+}
+
+nav .brand-logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.header-text {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--main-bg-color);
+    text-transform: uppercase;
+}
+
+.info-text {
+    font-weight: 500;
+    font-size: 12px;
+    color: #576366;
+}
+
+.info-title {
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #576366;
+}
+
+.chip {
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFF;
+    background: var(--main-bg-color);
+    text-transform: uppercase;
+    margin-bottom: 2px; 
+}
+
+.table-of-contents a:hover {
+    border-left: 2px solid var(--main-bg-color);
+}
+
+.table-of-contents a.active {
+    font-weight: 500;
+    color: var(--main-bg-color);
+    border-left: 2px solid var(--main-bg-color);
+}
+
+.table-of-contents a {
+    font-weight: 500;
+}
+
+.btn {
+    color: #FFF;
+	background-color: var(--main-bg-color);
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    cursor: pointer;
+    text-align: center;
+    line-height: 36px;
+}
+
+.btn:hover {
+	background-color: var(--main-bg-color);
+}
+
+th {
+    color: #576366;
+}
+
+td {
+    font-size: 13px;
+    font-weight: 500;
+    color: #757575;
+}
+
+.input-field label {
+	font-weight: 500;
+}
+
+.input-field label.active {
+    font-weight: 500;
+    font-size: 14px;    
+    color: var(--main-bg-color);
+}
+
+input:not([type]), input[type="text"], input[type="password"],
+input[type="email"], input[type="url"], input[type="time"],
+input[type="date"], input[type="datetime-local"],
+input[type="tel"], input[type="number"], input[type="search"],
+textarea.materialize-textarea, .select-wrapper input.select-dropdown {
+    border-bottom: 1px solid #cfd8dc;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid var(--main-bg-color);
+    box-shadow: 0 1px 0 0 var(--main-bg-color);
+}
+
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #ca1010;
+    box-shadow: 0 1px 0 0 #ca1010;
+}
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #78FA89;
+    box-shadow: 0 1px 0 0 #78FA89;
+}
+
+.select-wrapper input.select-dropdown {
+    color: #9e9e9e;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+	font-weight: 500;
+    font-size: 14px;
+	color: var(--main-bg-color);
+}
