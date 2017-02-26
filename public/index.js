@@ -142,7 +142,7 @@ $(document).ready(function() {
 				'<div class="card-panel">\
 					<h3 class="header-text right-align">'+ userData.name.firstName + ' ' + userData.name.lastName +'</h3>\
 					<div class="row">\
-						<div class="col l12">\
+						<div class="col l12 m12 s12">\
 							<table class="highlight centered">\
 								<thead>\
 									<tr>\
@@ -161,7 +161,7 @@ $(document).ready(function() {
 						</div>\
 					</div>\
 					<div class="row">\
-						<div class="col l12">\
+						<div class="col l12 m12 s12">\
 							<ul class="collection">\
 								<li class="collection-item">\
 									<span class="title info-title">Symptoms</span>\
