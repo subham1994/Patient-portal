@@ -57,10 +57,10 @@ $(document).ready(function() {
 	function resetForm() {
 		$('input[name=firstName]').val('');
 		$('input[name=lastName]').val('');
-		$('select[name=sex]').val('');
+		$('select[name=sex]').prop('selectedIndex',0);
 		$('input[name=contact]').val('');
 		$('input[name=dob]').val('');
-		$('select[name=symptoms]').val('');
+		$('select[name=symptoms]').prop('selectedIndex',0);
 		$('input[name=info]').val('');
 	}
 
